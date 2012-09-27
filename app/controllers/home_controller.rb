@@ -3,15 +3,15 @@ class HomeController < ApplicationController
   before_filter :toggle_ajaxify
 
   def index
-    sleep 1
+    sleep 0.5
   end
 
   def page1
-    sleep 1
+    sleep 0.5
   end
 
   def page2
-    sleep 1
+    sleep 0.5
   end
 
   def page3

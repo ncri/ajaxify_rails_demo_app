@@ -11,7 +11,15 @@
 
   %body
 
+    - sleep 1
+
     %h1#title Ajaxify Rails Demo (more info: #{link_to('ajaxify_rails gem', 'https://github.com/ncri/ajaxify_rails')})
+
+    #hints
+      - if session[:ajaxify]
+        Navigate. Note the difference. Also try out the browser's back and forward buttons.
+      - else
+        Navigate. Then switch on Ajaxify (checkbox right).
 
     #notice{ style: "#{'display:none' unless flash[:notice]}" }= flash[:notice]
 
@@ -27,6 +35,9 @@
 
     #main
       = yield
+
+    #footnote
+      Note: Layout rendering is delayed by one second to simulate a complex layout.
 
     :javascript
       Ajaxify.active = #{session[:ajaxify] ? 'true' : 'false'};

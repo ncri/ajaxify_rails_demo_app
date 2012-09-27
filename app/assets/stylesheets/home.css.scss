@@ -8,14 +8,25 @@ body{
   text-align: left;
 }
 
-#main, #navigation, #notice, #title{
+#main, #navigation, #notice, #title, #hints, #footnote{
   margin-top: 20px;
   width: 650px;
   margin: 0 auto;
 }
 
+#hints{
+  margin-bottom: 60px;
+  color: orange;
+}
+
+#footnote{
+  font-size: 0.8em;
+  margin-top: 10px;
+  text-align: right;
+}
+
 h1#title{
-  margin: 40px auto 60px;
+  margin: 40px auto 40px;
   font-size: 20px;
 
   a{
