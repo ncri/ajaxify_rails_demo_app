@@ -8,22 +8,31 @@ body{
   text-align: left;
 }
 
-#main, #navigation, #notice{
+#main, #navigation, #notice, #title{
   margin-top: 20px;
-  width: 450px;
+  width: 650px;
   margin: 0 auto;
+}
+
+h1#title{
+  margin: 40px auto 60px;
+  font-size: 20px;
+
+  a{
+    text-decoration: underline;
+  }
 }
 
 #main{
   border: 1px solid #aaa;
   padding: 70px 10px 10px;
-  width: 430px;
+  width: 630px;
   height: 140px;
   text-align: center;
 }
 
 #notice{
-  width: 430px;
+  width: 630px;
   padding: 10px;
   background-color: orange;
   color: white;
@@ -49,6 +58,11 @@ li{
   display: inline-block;
   padding-right: 15px;
 }
+
+#toggle_ajaxify{
+  float: right;
+}
+
 
 /* Ajaxify */
 

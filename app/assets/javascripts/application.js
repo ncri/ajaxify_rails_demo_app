@@ -14,3 +14,4 @@
 //= require jquery_ujs
 //= require ajaxify_rails
 //= require main
+//= require home

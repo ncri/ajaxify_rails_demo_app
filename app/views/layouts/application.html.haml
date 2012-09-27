@@ -11,9 +11,14 @@
 
   %body
 
+    %h1#title Ajaxify Rails Demo (more info: #{link_to('ajaxify_rails gem', 'https://github.com/ncri/ajaxify_rails')})
+
     #notice{ style: "#{'display:none' unless flash[:notice]}" }= flash[:notice]
 
     #navigation
+      #toggle_ajaxify
+        Ajaxify
+        = check_box_tag :ajaxify, '1', session[:ajaxify]
       %ul
         %li= link_to 'Home', '/', class: current_page?('/') ? 'active' : nil
         %li= link_to 'Page 1', '/home/page1', class: current_page?('/home/page1') ? 'active' : nil
@@ -22,3 +27,7 @@
 
     #main
       = yield
+
+    :javascript
+      Ajaxify.active = #{session[:ajaxify] ? 'true' : 'false'};
+

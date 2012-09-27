@@ -10,8 +10,6 @@ Ajaxify.on_success = (data, status, jqXHR, url) ->
 
 flash_timeout = null
 
-Ajaxify.flash_types = ['notice', 'warning']
-
 Ajaxify.flash_effect = (flash_type) ->
   flash_timeout = setTimeout( ->
     $("##{flash_type}").fadeOut()
@@ -20,6 +18,9 @@ Ajaxify.flash_effect = (flash_type) ->
 Ajaxify.clear_flash_effect = (flash_type) ->
   if flash_timeout
     clearTimeout flash_timeout
+
+
+# Ajaxify.flash_types = ['notice', 'warning']
 
 
 # Ajaxify.on_before_load = ->
