@@ -15,7 +15,7 @@ class HomeController < ApplicationController
   end
 
   def page3
-    flash[:notice] = 'Redirected to Page 1'
+    flash[:notice] = 'Flash notice: Redirected to Page 1'
     redirect_to '/home/page1'
   end
 
