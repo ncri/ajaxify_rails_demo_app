@@ -11,6 +11,10 @@
 
   %body
 
+    :javascript
+      Ajaxify.active = #{session[:ajaxify] ? 'true' : 'false'};
+      Ajaxify.init();
+
     - sleep 1
 
     %h1#title Ajaxify Rails Demo (more info: #{link_to('ajaxify_rails gem', 'https://github.com/ncri/ajaxify_rails')})
@@ -38,7 +42,4 @@
 
     #footnote
       Note: Layout rendering is delayed by one second to simulate a complex layout.
-
-    :javascript
-      Ajaxify.active = #{session[:ajaxify] ? 'true' : 'false'};
 

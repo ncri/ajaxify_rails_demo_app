@@ -1,4 +1,6 @@
 
+# Ajaxify.init()
+
 Ajaxify.on_success = (data, status, jqXHR, url) ->
   $nav_links = $('#navigation a')
   $nav_links.removeClass 'active'
@@ -31,7 +33,4 @@ Ajaxify.clear_flash_effect = (flash_type) ->
 #
 # Ajaxify.on_success_once = ->
 #   alert 'success once'
-
-
-# Ajaxify.base_path_regexp = /^(\/fr|\/de)/i
 

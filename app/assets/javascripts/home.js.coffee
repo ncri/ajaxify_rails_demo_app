@@ -5,11 +5,11 @@
 jQuery ->
 
   $('#ajaxify').click ->
-    location_without_params = window.location.href.replace /\?ajaxify_(on|off)=true/, ''
     if this.checked
-      window.location.href = location_without_params + '?ajaxify_on=true'
+      window.location.href = '?ajaxify_on=true'
     else
-      window.location.href = location_without_params + '?ajaxify_off=true'
+      window.location.href = '?ajaxify_off=true'
+
 
 
 

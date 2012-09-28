@@ -4,9 +4,9 @@ AjaxifyTest::Application.routes.draw do
   get "home/page1"
 
   get "home/page2"
+  post "home/page2"
 
   get "home/page3"
 
-  root :to => 'home#index'
-
+  root :to => 'home#index', locale: 'de'
 end

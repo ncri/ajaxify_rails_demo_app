@@ -3,6 +3,7 @@ class HomeController < ApplicationController
   before_filter :toggle_ajaxify
 
   def index
+    #redirect_to '/home/page1'
     sleep 0.5
   end
 
@@ -12,10 +13,13 @@ class HomeController < ApplicationController
 
   def page2
     sleep 0.5
+    if request.post?
+      flash.now[:notice] = "Form submitted (#{params[:input1]}, #{params[:input2]}, #{params[:check_me]})"
+    end
   end
 
   def page3
-    flash[:notice] = 'Flash notice: Redirected to Page 1'
+    flash[:notice] = 'Redirected to Page 1'
     redirect_to '/home/page1'
   end
 
