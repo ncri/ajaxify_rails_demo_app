@@ -3,7 +3,6 @@ class HomeController < ApplicationController
   before_filter :toggle_ajaxify
 
   def index
-    #redirect_to '/home/page1'
     sleep 0.5
   end
 

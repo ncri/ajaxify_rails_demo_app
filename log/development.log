@@ -36606,3 +36606,10 @@ Processing by HomeController#page2 as HTML
   Parameters: {"ajaxify_on"=>"true", "ajaxified"=>"true"}
   Rendered home/page2.html.haml (0.9ms)
 Completed 200 OK in 508ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-28 15:26:56 +0300
+Processing by HomeController#index as HTML
+  Parameters: {"locale"=>"de"}
+  Rendered home/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 1508ms (Views: 1006.7ms | ActiveRecord: 0.0ms)
