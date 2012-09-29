@@ -8,5 +8,5 @@ AjaxifyTest::Application.routes.draw do
 
   get "home/page3"
 
-  root :to => 'home#index', locale: 'de'
+  root :to => 'home#index'
 end
