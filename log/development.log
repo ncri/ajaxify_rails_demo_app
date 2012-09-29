@@ -45534,3 +45534,267 @@ Started GET "/" for 127.0.0.1 at 2012-09-29 17:49:59 +0300
 Processing by HomeController#index as HTML
   Rendered home/index.html.haml within layouts/application (0.1ms)
 Completed 200 OK in 1509ms (Views: 1007.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-29 17:57:02 +0300
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 1508ms (Views: 1006.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-29 17:57:03 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-29 17:57:03 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ajaxify_rails/jquery_cookie.js?body=1" for 127.0.0.1 at 2012-09-29 17:57:03 +0300
+Served asset /ajaxify_rails/jquery_cookie.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ajaxify_rails/ajaxify_rails.js?body=1" for 127.0.0.1 at 2012-09-29 17:57:03 +0300
+Served asset /ajaxify_rails/ajaxify_rails.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ajaxify_rails/index.js?body=1" for 127.0.0.1 at 2012-09-29 17:57:03 +0300
+Served asset /ajaxify_rails/index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2012-09-29 17:57:03 +0300
+Served asset /main.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-29 17:57:03 +0300
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-29 17:57:03 +0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-29 17:57:03 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-09-29 17:57:03 +0300
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ajax-loader.gif" for 127.0.0.1 at 2012-09-29 17:57:09 +0300
+Served asset /ajax-loader.gif - 304 Not Modified (0ms)
+
+
+Started GET "/home/page2?ajaxified=true" for 127.0.0.1 at 2012-09-29 17:57:09 +0300
+Processing by HomeController#page2 as HTML
+  Parameters: {"ajaxified"=>"true"}
+  Rendered home/page2.html.haml (0.7ms)
+Completed 200 OK in 507ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/page2" for 127.0.0.1 at 2012-09-29 17:57:27 +0300
+Processing by HomeController#page2 as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xZGI01JwaprmarbR37qo6nypEn/cRxh8Vox+eJ05sDg=", "input1"=>"", "input2"=>"", "ajaxified"=>"true"}
+  Rendered home/page2.html.haml (0.7ms)
+Completed 200 OK in 507ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/page2" for 127.0.0.1 at 2012-09-29 17:57:30 +0300
+Processing by HomeController#page2 as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xZGI01JwaprmarbR37qo6nypEn/cRxh8Vox+eJ05sDg=", "input1"=>"", "input2"=>"", "ajaxified"=>"true"}
+  Rendered home/page2.html.haml (0.8ms)
+Completed 200 OK in 509ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?ajaxified=true" for 127.0.0.1 at 2012-09-29 17:58:55 +0300
+Processing by HomeController#index as HTML
+  Parameters: {"ajaxified"=>"true"}
+  Rendered home/index.html.haml (0.1ms)
+Completed 200 OK in 506ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/page2?ajaxified=true" for 127.0.0.1 at 2012-09-29 17:59:02 +0300
+Processing by HomeController#page2 as HTML
+  Parameters: {"ajaxified"=>"true"}
+  Rendered home/page2.html.haml (0.6ms)
+Completed 200 OK in 507ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/page2" for 127.0.0.1 at 2012-09-29 17:59:03 +0300
+Processing by HomeController#page2 as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xZGI01JwaprmarbR37qo6nypEn/cRxh8Vox+eJ05sDg=", "input1"=>"", "input2"=>"", "ajaxified"=>"true"}
+  Rendered home/page2.html.haml (0.7ms)
+Completed 200 OK in 507ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?ajaxified=true" for 127.0.0.1 at 2012-09-29 17:59:05 +0300
+Processing by HomeController#index as HTML
+  Parameters: {"ajaxified"=>"true"}
+  Rendered home/index.html.haml (0.1ms)
+Completed 200 OK in 506ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/page2?ajaxified=true" for 127.0.0.1 at 2012-09-29 17:59:07 +0300
+Processing by HomeController#page2 as HTML
+  Parameters: {"ajaxified"=>"true"}
+  Rendered home/page2.html.haml (0.8ms)
+Completed 200 OK in 508ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/page2" for 127.0.0.1 at 2012-09-29 17:59:08 +0300
+Processing by HomeController#page2 as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xZGI01JwaprmarbR37qo6nypEn/cRxh8Vox+eJ05sDg=", "input1"=>"", "input2"=>"", "ajaxified"=>"true"}
+  Rendered home/page2.html.haml (0.7ms)
+Completed 200 OK in 507ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/page2" for 127.0.0.1 at 2012-09-29 17:59:19 +0300
+Processing by HomeController#page2 as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xZGI01JwaprmarbR37qo6nypEn/cRxh8Vox+eJ05sDg=", "input1"=>"", "input2"=>"", "ajaxified"=>"true"}
+  Rendered home/page2.html.haml (0.9ms)
+Completed 200 OK in 509ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/page2" for 127.0.0.1 at 2012-09-29 17:59:21 +0300
+Processing by HomeController#page2 as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xZGI01JwaprmarbR37qo6nypEn/cRxh8Vox+eJ05sDg=", "input1"=>"", "input2"=>"", "ajaxified"=>"true"}
+  Rendered home/page2.html.haml (0.7ms)
+Completed 200 OK in 508ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/page2" for 127.0.0.1 at 2012-09-29 17:59:23 +0300
+Processing by HomeController#page2 as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xZGI01JwaprmarbR37qo6nypEn/cRxh8Vox+eJ05sDg=", "input1"=>"", "input2"=>"", "ajaxified"=>"true"}
+  Rendered home/page2.html.haml (0.8ms)
+Completed 200 OK in 508ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/page2" for 127.0.0.1 at 2012-09-29 18:00:47 +0300
+Processing by HomeController#page2 as HTML
+  Rendered home/page2.html.haml within layouts/application (2.1ms)
+Compiled ajaxify_rails/ajaxify_rails.js  (219ms)  (pid 15810)
+Compiled ajaxify_rails/index.js  (1ms)  (pid 15810)
+Compiled application.js  (5ms)  (pid 15810)
+Completed 200 OK in 1790ms (Views: 1288.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-29 18:00:49 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-29 18:00:49 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ajaxify_rails/ajaxify_rails.js?body=1" for 127.0.0.1 at 2012-09-29 18:00:49 +0300
+Served asset /ajaxify_rails/ajaxify_rails.js - 200 OK (3ms)
+
+
+Started GET "/assets/ajaxify_rails/index.js?body=1" for 127.0.0.1 at 2012-09-29 18:00:49 +0300
+Served asset /ajaxify_rails/index.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2012-09-29 18:00:49 +0300
+Served asset /main.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ajaxify_rails/jquery_cookie.js?body=1" for 127.0.0.1 at 2012-09-29 18:00:49 +0300
+Served asset /ajaxify_rails/jquery_cookie.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-29 18:00:49 +0300
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-29 18:00:49 +0300
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-29 18:00:49 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-09-29 18:00:49 +0300
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ajax-loader.gif" for 127.0.0.1 at 2012-09-29 18:00:50 +0300
+Served asset /ajax-loader.gif - 304 Not Modified (0ms)
+
+
+Started GET "/home/page1?ajaxified=true" for 127.0.0.1 at 2012-09-29 18:00:50 +0300
+Processing by HomeController#page1 as HTML
+  Parameters: {"ajaxified"=>"true"}
+  Rendered home/page1.html.haml (0.1ms)
+Completed 200 OK in 508ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?ajaxified=true" for 127.0.0.1 at 2012-09-29 18:00:52 +0300
+Processing by HomeController#index as HTML
+  Parameters: {"ajaxified"=>"true"}
+  Rendered home/index.html.haml (0.1ms)
+Completed 200 OK in 507ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/page2?ajaxified=true" for 127.0.0.1 at 2012-09-29 18:00:53 +0300
+Processing by HomeController#page2 as HTML
+  Parameters: {"ajaxified"=>"true"}
+  Rendered home/page2.html.haml (0.9ms)
+Completed 200 OK in 509ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/page2" for 127.0.0.1 at 2012-09-29 18:00:54 +0300
+Processing by HomeController#page2 as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xZGI01JwaprmarbR37qo6nypEn/cRxh8Vox+eJ05sDg=", "input1"=>"", "input2"=>"", "ajaxified"=>"true"}
+  Rendered home/page2.html.haml (0.7ms)
+Completed 200 OK in 507ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/page2" for 127.0.0.1 at 2012-09-29 18:01:01 +0300
+Processing by HomeController#page2 as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xZGI01JwaprmarbR37qo6nypEn/cRxh8Vox+eJ05sDg=", "input1"=>"", "input2"=>"", "ajaxified"=>"true"}
+  Rendered home/page2.html.haml (0.8ms)
+Completed 200 OK in 509ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/page2" for 127.0.0.1 at 2012-09-29 18:01:04 +0300
+Processing by HomeController#page2 as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xZGI01JwaprmarbR37qo6nypEn/cRxh8Vox+eJ05sDg=", "input1"=>"", "input2"=>"", "ajaxified"=>"true"}
+  Rendered home/page2.html.haml (0.8ms)
+Completed 200 OK in 508ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/home/page2" for 127.0.0.1 at 2012-09-29 18:01:12 +0300
+Processing by HomeController#page2 as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xZGI01JwaprmarbR37qo6nypEn/cRxh8Vox+eJ05sDg=", "input1"=>"", "input2"=>"", "ajaxified"=>"true"}
+  Rendered home/page2.html.haml (0.8ms)
+Completed 200 OK in 508ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/page3?ajaxified=true" for 127.0.0.1 at 2012-09-29 18:01:20 +0300
+Processing by HomeController#page3 as HTML
+  Parameters: {"ajaxified"=>"true"}
+Redirected to http://localhost:3000/home/page1
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home/page1?ajaxified=true&ajaxify_redirect=true" for 127.0.0.1 at 2012-09-29 18:01:20 +0300
+Processing by HomeController#page1 as HTML
+  Parameters: {"ajaxified"=>"true", "ajaxify_redirect"=>"true"}
+  Rendered home/page1.html.haml (0.1ms)
+Completed 200 OK in 506ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/page3?ajaxified=true" for 127.0.0.1 at 2012-09-29 18:01:22 +0300
+Processing by HomeController#page3 as HTML
+  Parameters: {"ajaxified"=>"true"}
+Redirected to http://localhost:3000/home/page1
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home/page1?ajaxified=true&ajaxify_redirect=true" for 127.0.0.1 at 2012-09-29 18:01:22 +0300
+Processing by HomeController#page1 as HTML
+  Parameters: {"ajaxified"=>"true", "ajaxify_redirect"=>"true"}
+  Rendered home/page1.html.haml (0.1ms)
+Completed 200 OK in 506ms (Views: 1.9ms | ActiveRecord: 0.0ms)
