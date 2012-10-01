@@ -12,6 +12,6 @@ group :assets do
 end
 
 gem 'jquery-rails'
-gem 'ajaxify_rails', '>= 0.0.9'
+gem 'ajaxify_rails', '>= 0.1.0'
 #gem 'ajaxify_rails', path: '~/rails/ajaxify_rails'
 
