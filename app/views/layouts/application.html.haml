@@ -14,7 +14,7 @@
     -# No need to do call Ajaxify.init obtrusively in your app. Just call it from your js/coffeescript file, as early as possible.
     -# I only do it hackishly here to access the rails session.
     :javascript
-      Ajaxify.init( { active: #{session[:ajaxify] ? '' : 'false'} } );
+      Ajaxify.init( { #{session[:ajaxify] ? '' : 'active: false'} } );
 
     - sleep 1
 
