@@ -47724,3 +47724,32 @@ Processing by HomeController#page1 as HTML
   Parameters: {"ajaxified"=>"true", "ajaxify_redirect"=>"true"}
   Rendered home/page1.html.haml (0.1ms)
 Completed 200 OK in 506ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?ajaxified=true" for 127.0.0.1 at 2012-10-08 12:08:09 +0300
+Processing by HomeController#index as HTML
+  Parameters: {"ajaxified"=>"true"}
+  Rendered home/index.html.haml (0.1ms)
+Completed 200 OK in 509ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/page2?ajaxified=true" for 127.0.0.1 at 2012-10-08 12:08:10 +0300
+Processing by HomeController#page2 as HTML
+  Parameters: {"ajaxified"=>"true"}
+  Rendered home/page2.html.haml (0.7ms)
+Completed 200 OK in 509ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/page3?ajaxified=true" for 127.0.0.1 at 2012-10-08 12:08:12 +0300
+Processing by HomeController#page3 as HTML
+  Parameters: {"ajaxified"=>"true"}
+Redirected to http://localhost:3000/home/page1
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home/page1?ajaxified=true&ajaxify_redirect=true" for 127.0.0.1 at 2012-10-08 12:08:12 +0300
+Processing by HomeController#page1 as HTML
+  Parameters: {"ajaxified"=>"true", "ajaxify_redirect"=>"true"}
+  Rendered home/page1.html.haml (0.1ms)
+Completed 200 OK in 506ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
