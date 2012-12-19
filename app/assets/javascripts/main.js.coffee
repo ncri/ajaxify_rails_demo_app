@@ -4,7 +4,7 @@
 #  base_paths: ['de']
 
 jQuery ->
-  $('body').on 'ajaxify:content_loaded', (event, data, status, jqXHR, url) ->
+  $(document).on 'ajaxify:content_loaded', (event, data, status, jqXHR, url) ->
     $nav_links = $('#navigation a')
     $nav_links.removeClass 'active'
     $nav_links.filter( ->
@@ -15,7 +15,7 @@ jQuery ->
 
   flash_timeout = null
 
-  $('body').on 'ajaxify:flash_displayed', (event, flash_type) ->
+  $(document).on 'ajaxify:flash_displayed', (event, flash_type) ->
     clearTimeout flash_timeout if flash_timeout
     flash_timeout = setTimeout( ->
       $("##{flash_type}").fadeOut()
