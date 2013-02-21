@@ -1,7 +1,9 @@
 source 'https://rubygems.org'
 source 'http://gems.github.com'
 
-gem 'rails', '3.2.11'
+ruby '1.9.3'
+
+gem 'rails', '3.2.12'
 gem 'haml'
 gem 'pg'
 gem 'sqlite3', group: :development
@@ -14,5 +16,3 @@ end
 
 gem 'jquery-rails'
 gem 'ajaxify_rails', '>= 0.1.6'
-#gem 'ajaxify_rails', path: '~/rails/ajaxify_rails'
-
