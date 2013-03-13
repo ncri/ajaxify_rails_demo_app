@@ -31,7 +31,6 @@ end
 if Rake::Task.task_defined?("assets:precompile:nondigest")
   Rake::Task["assets:precompile:nondigest"].enhance do
   	client = ::Heroku::API.new(api_key: ENV['HEROKU_API_KEY'])
-  	AjaxifyTest::Application.load_tasks
   	client.post_ps 'ajaxify-demo', 'rake deploy:clear_cache_after'
   	puts 'Started rake deploy:clear_cache_after in new process'
   end
