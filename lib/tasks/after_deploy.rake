@@ -1,4 +1,4 @@
-# testing...
+
 if Rake::Task.task_defined?("assets:precompile:nondigest")
   Rake::Task["assets:precompile:nondigest"].enhance do
   	client = ::Heroku::API.new(api_key: ENV['HEROKU_API_KEY'])
