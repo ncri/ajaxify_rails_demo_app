@@ -1,11 +1,12 @@
 
-if Rake::Task.task_defined?("assets:precompile:digest")
+if Rake::Task.task_defined?("assets:precompile:nondigest")
   Rake::Task["assets:precompile:nondigest"].enhance do
   	client = ::Heroku::API.new(api_key: ENV['HEROKU_API_KEY'])
   	client.post_ps 'ajaxify-demo', 'rake deploy:clear_cache_after_new_release_startup'
-  	puts 'Cache clearing after release startup started...'
+  	puts 'Started rake deploy:clear_cache_after_new_release_startup in new process'
   end
 end
+
 
 namespace :deploy do
 
@@ -19,7 +20,6 @@ namespace :deploy do
 		Rails.cache.clear
 		puts 'Cache cleared after release startup.'
   end
-
 
   def new_release_up? client, old_release_number
   	running_releases = client.get_ps('ajaxify-demo').body.find_all{ |a| a['process'] =~ /web/ }.map{ |p| p['release'] }
