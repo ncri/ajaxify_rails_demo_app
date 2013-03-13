@@ -1,3 +1,4 @@
+# testing...
 if Rake::Task.task_defined?("assets:precompile:nondigest")
   Rake::Task["assets:precompile:nondigest"].enhance do
   	puts 'non_digest: '
