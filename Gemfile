@@ -8,8 +8,6 @@ gem 'haml'
 gem 'pg'
 gem 'sqlite3', group: :development
 
-gem 'heroku-api', '0.3.5'
-
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
@@ -17,4 +15,4 @@ group :assets do
 end
 
 gem 'jquery-rails'
-gem 'ajaxify_rails', '0.7.0beta' #, path: '~/rails/ajaxify_rails'
+gem 'ajaxify_rails', '0.7.0' #, path: '~/rails/ajaxify_rails'
