@@ -3,7 +3,6 @@
 # Clear cache after new release startup complete. (Only for Heroku deploys using the preboot labs feature!)
 # ------------------------------------------------------------------------------------------------------------------------
 
-if Rake::Task.task_defined?("assets:precompile:nondigest")
 
 	namespace :deploy do
 
@@ -17,10 +16,9 @@ if Rake::Task.task_defined?("assets:precompile:nondigest")
 
 	end
 
-  Rake::Task["assets:precompile:nondigest"].enhance do
+  Rake::Task["assets:precompile"].enhance do
   	client = ::Heroku::API.new(api_key: ENV['HEROKU_API_KEY'])
   	old_release = client.get_releases(ENV['APP_NAME']).body.last['name'].sub('v','')
   	client.post_ps ENV['APP_NAME'], "rake deploy:blubi[#{old_release}]"
   	puts 'Started rake deploy:clear_cache_after_new_release_startup in new process'
   end
-end
