@@ -50387,3 +50387,5 @@ Processing by HomeController#page1 as HTML
   Parameters: {"ajaxified"=>"true"}
   Rendered home/page1.html.haml (0.1ms)
 Completed 200 OK in 508ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
